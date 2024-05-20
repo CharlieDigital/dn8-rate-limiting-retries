@@ -1,0 +1,17 @@
+/Users/cchen/Code/sandbox-2/dn-ratelimiting-polly/client/bin/Debug/net8.0/client
+/Users/cchen/Code/sandbox-2/dn-ratelimiting-polly/client/bin/Debug/net8.0/client.deps.json
+/Users/cchen/Code/sandbox-2/dn-ratelimiting-polly/client/bin/Debug/net8.0/client.runtimeconfig.json
+/Users/cchen/Code/sandbox-2/dn-ratelimiting-polly/client/bin/Debug/net8.0/client.dll
+/Users/cchen/Code/sandbox-2/dn-ratelimiting-polly/client/bin/Debug/net8.0/client.pdb
+/Users/cchen/Code/sandbox-2/dn-ratelimiting-polly/client/bin/Debug/net8.0/Polly.Core.dll
+/Users/cchen/Code/sandbox-2/dn-ratelimiting-polly/client/obj/Debug/net8.0/client.csproj.AssemblyReference.cache
+/Users/cchen/Code/sandbox-2/dn-ratelimiting-polly/client/obj/Debug/net8.0/client.GeneratedMSBuildEditorConfig.editorconfig
+/Users/cchen/Code/sandbox-2/dn-ratelimiting-polly/client/obj/Debug/net8.0/client.AssemblyInfoInputs.cache
+/Users/cchen/Code/sandbox-2/dn-ratelimiting-polly/client/obj/Debug/net8.0/client.AssemblyInfo.cs
+/Users/cchen/Code/sandbox-2/dn-ratelimiting-polly/client/obj/Debug/net8.0/client.csproj.CoreCompileInputs.cache
+/Users/cchen/Code/sandbox-2/dn-ratelimiting-polly/client/obj/Debug/net8.0/client.csproj.Up2Date
+/Users/cchen/Code/sandbox-2/dn-ratelimiting-polly/client/obj/Debug/net8.0/client.dll
+/Users/cchen/Code/sandbox-2/dn-ratelimiting-polly/client/obj/Debug/net8.0/refint/client.dll
+/Users/cchen/Code/sandbox-2/dn-ratelimiting-polly/client/obj/Debug/net8.0/client.pdb
+/Users/cchen/Code/sandbox-2/dn-ratelimiting-polly/client/obj/Debug/net8.0/client.genruntimeconfig.cache
+/Users/cchen/Code/sandbox-2/dn-ratelimiting-polly/client/obj/Debug/net8.0/ref/client.dll
