@@ -65,6 +65,8 @@ app.MapGet(
       Console.WriteLine(
         $"Executed workload {requests} for job {job} with time: {workload}ms"
       );
+
+      return $"Job {job} completed in: {workload}";
     }
   )
   .RequireRateLimiting("4_concurrent_sliding"); // Attach our rate limiting policy
