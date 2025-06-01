@@ -20,6 +20,7 @@ class RetryAfterError extends Error {
 async function main() {
   console.log("starting...");
 
+  // 1️⃣ The retry policy wrapping our backoff strategy
   const retryPolicy = retry(handleAll, {
     maxAttempts: 10,
     // backoff: new ExponentialBackoff({ maxDelay: 60000, initialDelay: 500 }),
@@ -36,6 +37,7 @@ async function main() {
   retryPolicy.onFailure((f) => console.log("Request failed:", f.duration));
   retryPolicy.onRetry((r) => console.log("Retry:", r.attempt));
 
+  // 2️⃣ The circuit breaker policy that buffers requests to prevent overloading
   const circuitBreakerPolicy = circuitBreaker(handleAll, {
     halfOpenAfter: 10 * 1000,
     breaker: new ConsecutiveBreaker(3),
@@ -45,8 +47,10 @@ async function main() {
     console.log("Breaker state change:", d);
   });
 
+  // 3️⃣ Wrap these together!
   const retryWithBreaker = wrap(retryPolicy, circuitBreakerPolicy);
 
+  // 4️⃣ Function to make our request to the server endpoint
   const requestFn = (i: number) =>
     retryWithBreaker.execute(async () => {
       console.log("Executing job:", i);
@@ -66,6 +70,7 @@ async function main() {
       }
     });
 
+  // 👇 Run 10 concurrent requests and watch!
   await Promise.all(Array.from({ length: 10 }, (_, i) => requestFn(i)));
 
   console.log("Done!");
